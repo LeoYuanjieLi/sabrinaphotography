@@ -7,8 +7,7 @@
     "start": "nodem server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --config webpack.config.js",
-    "heroku-postbuild": "webpack -p --config ./webpack.prod.config.js --progress",
-    "dev": "nodemon ./node_modules/webpack-dev-server/bin/webpack-dev-server.js"
+    "heroku-postbuild": "webpack -p --config ./webpack.prod.config.js --progress"
   },
   "keywords": [],
   "author": "",
