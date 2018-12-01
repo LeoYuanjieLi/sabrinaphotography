@@ -4,7 +4,7 @@
   "description": "something here",
   "main": "index.js",
   "scripts": {
-    "start": "nodem server.js",
+    "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --config webpack.config.js",
     "heroku-postbuild": "webpack -p --config ./webpack.prod.config.js --progress"
