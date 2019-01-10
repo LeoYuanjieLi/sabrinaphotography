@@ -30,6 +30,9 @@
   "dependencies": {
     "@babel/preset-env": "^7.1.6",
     "@babel/preset-react": "^7.0.0",
+    "style-loader": "^0.23.1",
+    "css-loader": "^2.1.0",
+    "url-loader": "^1.1.2",
     "express": "^4.16.4",
     "react": "^16.6.3",
     "react-background-slideshow": "^1.0.4",
