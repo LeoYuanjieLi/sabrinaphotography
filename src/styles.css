@@ -1,0 +1,86 @@
+body, html {
+    margin: auto;
+    box-sizing: border-box;
+  }
+  
+.EnterPage { 
+    text-align: center;
+    /* background: url("./public/background-image.jpg") no-repeat center center fixed;  */
+    height: 100vh;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+.Background {
+    z-index: -1;
+}
+
+.EnterImage {
+    width: 100%;
+    opacity: 10%;
+}
+
+.Logo {
+    z-index: 99;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.Logo img {
+    width: 35%;
+}
+
+.EnterButton {
+    z-index: 99;
+    border-radius: 4px;
+    background-color: white;
+    border: none;
+    color: black;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px;
+    width: 100px;
+    transition: all 0.25s;
+    cursor: pointer;
+    margin: 5px;
+    border: 1px solid black;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-55%, -50%);
+  }
+  
+.EnterButton span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.25s;
+  }
+  
+.EnterButton span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    transition: 0.25s;
+
+  }
+
+.EnterButton:hover {
+    color: white;
+    background-color: black;
+}
+
+.EnterButton:hover span {
+    padding-right: 25px;
+
+  }
+  
+.EnterButton:hover span:after {
+    opacity: 1;
+    right: 0;
+  }

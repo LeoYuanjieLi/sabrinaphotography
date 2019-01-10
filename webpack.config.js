@@ -13,8 +13,22 @@ module.exports = {
         test: /\.js$/,
         exclude: /node_modules/,
         use: {
-          loader: 'babel-loader'
+          loader: 'babel-loader',
+                  options: {
+          presets: ['@babel/preset-env'],
+          plugins: [
+                    '@babel/plugin-proposal-class-properties'
+                    ]
         }
+        }
+      },
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader']
+      },
+      {
+        test: /\.(png|jpg)$/,
+        loader: 'url-loader'
       }
     ]
   },
@@ -22,6 +36,9 @@ module.exports = {
     new HtmlWebpackPlugin({ 
       template: './src/index.html', 
       filename: './index.html' 
-    })
-  ]
+    }),
+
+
+  ],
+  mode: "production"
 }
