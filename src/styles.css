@@ -5,7 +5,7 @@ body, html {
   
 .EnterPage { 
     text-align: center;
-    /* background: url("./public/background-image.jpg") no-repeat center center fixed;  */
+    background: url("./public/background-image.jpg") no-repeat center center fixed; 
     height: 100vh;
     -webkit-background-size: cover;
     -moz-background-size: cover;
